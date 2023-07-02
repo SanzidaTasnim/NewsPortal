@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
  [Master Stylesheet]
 
-  Project:	Star Admin2 
+  Project:	Star Admin2
   Version:	1.2.1
 -------------------------------------------------------------------*/
 /*-------------------------------------------------------------------
@@ -25894,7 +25894,7 @@ dl li {
 }
 
 .home-tab .tab-content {
-  padding: 24px 0;
+  padding: 0 0;
   font-family: "Manrope", sans-serif;
   border: none;
 }
@@ -28892,7 +28892,7 @@ div.tagsinput span.tag a {
 
 .content-wrapper {
   background: #F4F5F7;
-  padding: 1.5rem 2.187rem 1.5rem 3.5rem;
+  padding: 0 3.5rem;
   width: 100%;
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -29122,7 +29122,7 @@ div.tagsinput span.tag a {
 .sidebar .nav.sub-menu .nav-item {
   padding: 0;
 }
-
+/*
 .sidebar .nav.sub-menu .nav-item::before {
   content: '';
   width: 5px;
@@ -29131,6 +29131,11 @@ div.tagsinput span.tag a {
   margin-top: 16px;
   border-radius: 50%;
   background: #b2b2b2;
+} */
+.sidebar .nav .nav-item .nav-link i {
+    color: inherit;
+    font-size: 16px;
+    margin-right: 15px;
 }
 
 .sidebar .nav.sub-menu .nav-item .nav-link {
@@ -29298,8 +29303,13 @@ div.tagsinput span.tag a {
   padding: 20px 35px;
 }
 
+
 .sidebar-dark .navbar .navbar-brand-wrapper {
   background: #232227;
+}
+.navbar-menu-wrapper.d-flex.align-items-top {
+    box-shadow: 0 4px 2px -4px gray;
+    transform: translateY(-16px);
 }
 
 @media (max-width: 991px) {
@@ -29392,18 +29402,18 @@ div.tagsinput span.tag a {
 }
 
 .navbar .navbar-menu-wrapper {
-  background: #F4F5F7;
-  transition: width 0.25s ease;
-  -webkit-transition: width 0.25s ease;
-  -moz-transition: width 0.25s ease;
-  -ms-transition: width 0.25s ease;
-  color: #6C7383;
-  padding-left: 3.5rem;
-  padding-right: 2.187rem;
-  padding-top: 30px;
-  padding-bottom: 25px;
-  width: calc(100% - 220px);
-  height: 97px;
+    background: #F4F5F7;
+    transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -ms-transition: width 0.25s ease;
+    color: #6C7383;
+    padding-left: 3.5rem;
+    padding-right: 2.187rem;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    width: calc(100% - 220px);
+    height: 65px;
 }
 
 @media (max-width: 991px) {
@@ -29702,7 +29712,7 @@ div.tagsinput span.tag a {
   font-size: 28px;
   line-height: 38px;
   color: #8D8D8D;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item .welcome-text .text-dark {
@@ -29921,6 +29931,7 @@ div.tagsinput span.tag a {
 
 .navbar.navbar-dark .navbar-menu-wrapper {
   border-left-color: #556370;
+  transform: translateY(-16px);
 }
 
 .navbar.navbar-danger .navbar-menu-wrapper .nav-item .nav-link.count-indicator .count {
